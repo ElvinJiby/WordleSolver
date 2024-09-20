@@ -9,6 +9,29 @@ import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
 
+/*
+ * 26/04/2024
+ * Created as part of a Data Structures (COMP20280) assignment
+ * Data structure classes provided by Aonghus Lawler (lecturer for Data Structures)
+ * Wordle & WordleTest classes made by Elvin Jiby
+ *
+ * A simple Wordle solver that helps you guess a word based on a sample dictionary of words!
+ * You can play by running the Main method down below!
+ *
+ * When you start, the console will display all the words in the dictionary. Choose one and enter it as your guess.
+ * Then the program will display a hint based on your guess
+ *  -> + for correct letter in the correct position,
+ *  -> o for correct letter but not in the correct position
+ *  -> _ for incorrect letter (not present in the target word)
+ *
+ * You'll then get a list of the best words to guess next, with their scores sorted from highest to lowest
+ * Continue picking the highest scored word until you win
+ * Do note that this doesn't guarantee you correctly guess the word in all 6 guesses.
+ *
+ * Have fun!
+ */
+
+
 public class Wordle {
     Random rand = new Random();
 
