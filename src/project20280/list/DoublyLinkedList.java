@@ -37,8 +37,8 @@ public class DoublyLinkedList<E> implements List<E> {
         }
     }
 
-    private Node<E> head;
-    private Node<E> tail;
+    private final Node<E> head;
+    private final Node<E> tail;
     private int size = 0;
 
     public DoublyLinkedList() {

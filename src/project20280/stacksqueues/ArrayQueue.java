@@ -5,7 +5,7 @@ import project20280.interfaces.Queue;
 public class ArrayQueue<E> implements Queue<E> {
 
     private static final int CAPACITY = 1000;
-    private E[] data;
+    private final E[] data;
     private int front = 0;
     private int size = 0;
 

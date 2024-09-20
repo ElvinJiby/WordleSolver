@@ -18,7 +18,7 @@ public class WordleTest {
         System.out.println("Number of collisions in the regular dictionary: " + possible_words.getNumOfCollisions());
 
         Wordle wordle2 = new Wordle("project20280/wordle/resources/extended-dictionary.txt");
-        List<String> extendedDictionary = wordle.getDictionary();
+        List<String> extendedDictionary = wordle2.getDictionary();
         ChainHashMap<String,Integer> possible_words2 = Wordle.buildWordHashmap(extendedDictionary);
         System.out.println("Number of collisions in the extended dictionary: " + possible_words2.getNumOfCollisions());
     }
@@ -35,7 +35,7 @@ public class WordleTest {
         System.out.println("Regular dictionary Load Factor: " + actual);
 
         Wordle wordle2 = new Wordle("project20280/wordle/resources/extended-dictionary.txt");
-        List<String> extendedDictionary = wordle.getDictionary();
+        List<String> extendedDictionary = wordle2.getDictionary();
         ChainHashMap<String,Integer> possible_words2 = Wordle.buildWordHashmap(extendedDictionary);
 
         expected = 0.2680277091153224;
@@ -108,13 +108,13 @@ public class WordleTest {
         target = "kayak";
         guess = "kayak";
         hints = wordleA.getHints(target, guess);
-        System.out.println(target + ", " + guess + ", " + hints);
+        System.out.println(target + ", " + guess + ", " + Arrays.toString(hints));
         assertEquals("[+, +, +, +, +]", Arrays.toString(hints));
 
         target = "kayak";
         guess = "fungi";
         hints = wordleA.getHints(target, guess);
-        System.out.println(target + ", " + guess + ", " + hints);
+        System.out.println(target + ", " + guess + ", " + Arrays.toString(hints));
         assertEquals("[_, _, _, _, _]", Arrays.toString(hints));
     }
 }

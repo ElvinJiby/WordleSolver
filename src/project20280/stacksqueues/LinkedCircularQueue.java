@@ -12,7 +12,7 @@ import project20280.list.CircularlyLinkedList;
  */
 
 public class LinkedCircularQueue<E> implements Queue<E> {
-    private CircularlyLinkedList<E> circularlyLinkedList;
+    private final CircularlyLinkedList<E> circularlyLinkedList;
     public LinkedCircularQueue() {
         circularlyLinkedList = new CircularlyLinkedList<E>();
     }

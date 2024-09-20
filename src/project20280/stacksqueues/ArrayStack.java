@@ -5,7 +5,7 @@ import project20280.interfaces.Stack;
 public class ArrayStack<E> implements Stack<E> {
 
     public static final int CAPACITY = 100; // default array capacity
-    private E[] data;  // generic array used for storage
+    private final E[] data;  // generic array used for storage
     private int t = -1;  // index of the top element in stack
 
     public ArrayStack() {

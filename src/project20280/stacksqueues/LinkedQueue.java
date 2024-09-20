@@ -5,7 +5,7 @@ import project20280.list.DoublyLinkedList;
 
 public class LinkedQueue<E> implements Queue<E> {
 
-    private DoublyLinkedList<E> ll;
+    private final DoublyLinkedList<E> ll;
 
     public static void main(String[] args) {
     }

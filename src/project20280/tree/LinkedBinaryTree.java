@@ -99,8 +99,8 @@ public class LinkedBinaryTree<E> extends AbstractBinaryTree<E> {
      * @throws IllegalArgumentException if an invalid position is detected
      */
     protected Node<E> validate(Position<E> p) throws IllegalArgumentException {
-        if (!(p instanceof Node)) throw new IllegalArgumentException("Not valid position type");
-        Node<E> node = (Node<E>) p; // safe cast
+        if (!(p instanceof Node<E> node)) throw new IllegalArgumentException("Not valid position type");
+        // safe cast
         if (node.getParent() == node) // our convention for defunct node
             throw new IllegalArgumentException("p is no longer in the tree");
         return node;
