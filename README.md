@@ -1,4 +1,3 @@
-Created as part of a Data Structures assignment for my 2nd Year of Computer Science<br/>
 Made by Elvin Jiby with IntelliJ<br/>
 26/04/2024<br/>
 <br/>
